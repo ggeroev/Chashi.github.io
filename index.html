@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ча Ши — чайный дом премиум-класса</title>
+    <meta name="description" content="Чайный дом Ча Ши: редкие сорта чая, дегустации и чайные наборы с быстрой доставкой по Москве.">
+    <meta name="theme-color" content="#2f2119">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Ча Ши — главная">
+                <span class="logo-main">Ча Ши</span>
+                <span class="logo-chinese">茶 卩</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-nav">☰</button>
+            <nav class="nav-menu" id="primary-nav">
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="events.html">События</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html" class="cart-link" aria-label="Перейти в корзину">Корзина <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero animate-fade">
+            <div class="hero-content">
+                <span class="hero-kicker">Чайный дом в Москве</span>
+                <h1>Редкие чаи и спокойные ритуалы каждый день</h1>
+                <p>Отборные пуэры, улуны и зелёные чаи из проверенных регионов Китая, Тайваня и Японии. Всё, чтобы дома было ощущение полноценной чайной церемонии.</p>
+                <div class="hero-actions">
+                    <a href="catalog.html" class="btn">Открыть каталог</a>
+                    <a href="events.html" class="btn-outline">Записаться на дегустацию</a>
+                </div>
+                <div class="hero-meta">
+                    <span class="hero-stat">С 2015 года</span>
+                    <span class="hero-stat">72 сорта в наличии</span>
+                    <span class="hero-stat">Доставка день в день</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Популярные чаи <span>выбор наших гостей</span></h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-img tea-puer"></div>
+                    <div class="card-content">
+                        <h3>Пуэр «Древний Лес» 2009</h3>
+                        <p>Выдержанный шу пуэр с мягкими древесными нотами и долгим послевкусием.</p>
+                        <div class="price">3 500 ₽</div>
+                        <a href="product.html" class="card-link">Подробнее о сорте</a>
+                        <button class="btn-small add-to-cart" data-id="1" data-name="Пуэр Древний Лес" data-price="3500">В корзину</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img tea-oolong"></div>
+                    <div class="card-content">
+                        <h3>Те Гуань Инь</h3>
+                        <p>Лёгкий улун с цветочным ароматом, идеален для спокойного вечера.</p>
+                        <div class="price">2 200 ₽</div>
+                        <a href="product.html" class="card-link">Подробнее о сорте</a>
+                        <button class="btn-small add-to-cart" data-id="2" data-name="Те Гуань Инь" data-price="2200">В корзину</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img tea-green"></div>
+                    <div class="card-content">
+                        <h3>Лунцзин «Колодец Дракона»</h3>
+                        <p>Тонкий зелёный чай со свежим травяным профилем и сладкой базой.</p>
+                        <div class="price">2 800 ₽</div>
+                        <a href="product.html" class="card-link">Подробнее о сорте</a>
+                        <button class="btn-small add-to-cart" data-id="3" data-name="Лунцзин" data-price="2800">В корзину</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img tea-red"></div>
+                    <div class="card-content">
+                        <h3>Дянь Хун «Золотые почки»</h3>
+                        <p>Плотный красный чай с шоколадными оттенками и мягкой сладостью.</p>
+                        <div class="price">1 900 ₽</div>
+                        <a href="product.html" class="card-link">Подробнее о сорте</a>
+                        <button class="btn-small add-to-cart" data-id="4" data-name="Дянь Хун" data-price="1900">В корзину</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-container">
+                <article class="info-block">
+                    <h2 class="section-title left">Ближайшие дегустации</h2>
+                    <ul class="event-list">
+                        <li class="event-item">
+                            <span class="event-time">25 апреля 2026, 19:00</span>
+                            <p>Гунфу-церемония с практикой заваривания и разбором посуды.</p>
+                            <a href="events.html" class="btn-outline">Записаться</a>
+                        </li>
+                        <li class="event-item">
+                            <span class="event-time">30 апреля 2026, 15:00</span>
+                            <p>Дегустация улунов с контрастной ферментацией и разным профилем вкуса.</p>
+                            <a href="events.html" class="btn-outline">Записаться</a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="info-block">
+                    <h2 class="section-title left">Подписка на чайный клуб</h2>
+                    <p>Раз в месяц отправляем бокс с редкими позициями, карточками заваривания и мини-гайдом по вкусу.</p>
+                    <form id="subscription-form">
+                        <div class="form-group">
+                            <label for="subscription-email">Ваш email</label>
+                            <input id="subscription-email" type="email" placeholder="name@email.com" required>
+                        </div>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                </article>
+            </div>
+        </section>
+
+        <section class="trust-strip" aria-label="Преимущества">
+            <article class="trust-item">
+                <strong>Прямые поставки</strong>
+                <p>Работаем с фермерами без посредников, чтобы сохранять вкус и прозрачность происхождения.</p>
+            </article>
+            <article class="trust-item">
+                <strong>Подбор под вкус</strong>
+                <p>Собираем персональные рекомендации по крепости, аромату и настроению.</p>
+            </article>
+            <article class="trust-item">
+                <strong>Чайные встречи</strong>
+                <p>Проводим открытые дегустации, чтобы можно было попробовать редкие сорта до покупки.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">Чайный дом «Ча Ши»</div>
+                <p class="footer-item">Мастерство в каждой чашке</p>
+            </div>
+            <div>
+                <div class="footer-item">Москва, ул. Чайная, 15</div>
+                <div class="footer-item">Ежедневно: 10:00-22:00</div>
+            </div>
+            <div>
+                <div class="footer-item"><a href="tel:+74951234567">+7 (495) 123-45-67</a></div>
+                <div class="footer-item"><a href="mailto:info@chashi.ru">info@chashi.ru</a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 «Ча Ши». Чай, который возвращает к себе.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

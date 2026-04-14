@@ -1,0 +1,121 @@
+<!-- ===== index.html ===== -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Ча Ши — чайный дом премиум-класса</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Noto+Serif+KR:wght@400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                ЧА ШИ <span class="logo-chinese">茶 卩</span>
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="events.html">События</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html" class="cart-icon">🛒 <span id="cart-count" class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content animate-fade">
+                <h1>Чайная традиция высшего класса</h1>
+                <p>Каждый глоток — путешествие в мир гармонии и умиротворения</p>
+                <a href="catalog.html" class="btn">Открыть каталог</a>
+            </div>
+        </section>
+
+        <section class="pattern-bg">
+            <h2 class="section-title">Популярные чаи <span>избранные сорта</span></h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('images/tea-puer.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Пуэр «Древний Лес» 2009</h3>
+                        <p>Выдержанный шу пуэр из Юньнани</p>
+                        <div class="price">3 500 ₽</div>
+                        <button class="btn-small add-to-cart" data-id="1" data-name="Пуэр Древний Лес" data-price="3500">В корзину</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('images/tea-oolong.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Те Гуань Инь «Железная Бодхисаттва»</h3>
+                        <p>Улун с цветочным ароматом</p>
+                        <div class="price">2 200 ₽</div>
+                        <button class="btn-small add-to-cart" data-id="2" data-name="Те Гуань Инь" data-price="2200">В корзину</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('images/tea-green.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Лунцзин «Колодец Дракона»</h3>
+                        <p>Знаменитый зелёный чай</p>
+                        <div class="price">2 800 ₽</div>
+                        <button class="btn-small add-to-cart" data-id="3" data-name="Лунцзин" data-price="2800">В корзину</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('images/tea-red.jpg')"></div>
+                    <div class="card-content">
+                        <h3>Дянь Хун «Золотые почки»</h3>
+                        <p>Красный чай из Юньнани</p>
+                        <div class="price">1 900 ₽</div>
+                        <button class="btn-small add-to-cart" data-id="4" data-name="Дянь Хун" data-price="1900">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-container">
+                <div class="info-block">
+                    <h2 class="section-title left">Ближайшие дегустации</h2>
+                    <ul class="event-list">
+                        <li>
+                            <strong>25 апреля 2026, 19:00</strong> — Гунфу чайная церемония
+                            <a href="events.html" class="btn-outline btn-small">Записаться</a>
+                        </li>
+                        <li>
+                            <strong>30 апреля 2026, 15:00</strong> — Дегустация улунов
+                            <a href="events.html" class="btn-outline btn-small">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-block">
+                    <h2 class="section-title left">Подписка на чайный клуб</h2>
+                    <p>Ежемесячный бокс редких чаёв с доставкой</p>
+                    <form class="form-group" id="subscription-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>© 2026 Чайный дом «Ча Ши»</div>
+            <div>Москва, ул. Чайная, 15</div>
+            <div>+7 (495) 123-45-67</div>
+            <div>info@chashi.ru</div>
+        </div>
+        <div class="footer-bottom">Мастерство в каждой чашке</div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

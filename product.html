@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пуэр «Древний Лес» — Ча Ши</title>
+    <meta name="description" content="Подробная карточка пуэра Древний Лес 2009: вкус, характеристики, рекомендации по завариванию.">
+    <meta name="theme-color" content="#2f2119">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Ча Ши — главная">
+                <span class="logo-main">Ча Ши</span>
+                <span class="logo-chinese">茶 卩</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-nav">☰</button>
+            <nav class="nav-menu" id="primary-nav">
+                <ul>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="events.html">События</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html" class="cart-link" aria-label="Перейти в корзину">Корзина <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-main">
+        <div class="product-container">
+            <section class="product-gallery" aria-label="Галерея товара">
+                <div class="main-image product-image-puer" id="main-product-image"></div>
+                <div class="thumbnail-list">
+                    <button type="button" class="thumbnail-btn product-image-puer active" data-image-class="product-image-puer" aria-label="Основной вид"></button>
+                    <button type="button" class="thumbnail-btn product-image-brew" data-image-class="product-image-brew" aria-label="Заваривание"></button>
+                    <button type="button" class="thumbnail-btn product-image-leaf" data-image-class="product-image-leaf" aria-label="Лист"></button>
+                </div>
+            </section>
+
+            <section class="product-info">
+                <h1>Пуэр «Древний Лес» 2009</h1>
+                <p class="product-subtitle">Спелый шу пуэр, Юньнань</p>
+                <div class="price">3 500 ₽</div>
+                <p>Сырьё собрано с древних чайных деревьев на высоте около 1500 метров. Длительная выдержка делает вкус плотным, ровным и очень стабильным от пролива к проливу.</p>
+                <p>В аромате чувствуются древесные оттенки, какао и сухофрукты. Послевкусие тёплое, сладковатое, без резкости. Отличный вариант для вечерних церемоний и неспешной работы.</p>
+                <div class="product-actions">
+                    <button class="btn add-to-cart" data-id="1" data-name="Пуэр Древний Лес" data-price="3500">Добавить в корзину</button>
+                    <button class="btn-outline" type="button">Добавить в избранное</button>
+                </div>
+                <div class="product-specs">
+                    <h2>Характеристики</h2>
+                    <div class="feature-list">
+                        <div><strong>Вес:</strong> 100 г</div>
+                        <div><strong>Год сбора:</strong> 2009</div>
+                        <div><strong>Регион:</strong> Сишуанбаньна, Юньнань</div>
+                        <div><strong>Температура воды:</strong> 95-98 °C</div>
+                        <div><strong>Количество проливов:</strong> 7-9</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <h2 class="section-title related-title">С этим чаем часто берут</h2>
+        <div class="card-grid">
+            <article class="card">
+                <div class="card-img tea-oolong"></div>
+                <div class="card-content">
+                    <h3>Те Гуань Инь</h3>
+                    <p>Улун для баланса: цветочный и лёгкий.</p>
+                    <div class="price">2 200 ₽</div>
+                    <a href="catalog.html" class="card-link">Смотреть в каталоге</a>
+                    <button class="btn-small add-to-cart" data-id="2" data-name="Те Гуань Инь" data-price="2200">В корзину</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img tea-white"></div>
+                <div class="card-content">
+                    <h3>Белый чай «Серебряные иглы»</h3>
+                    <p>Деликатный чай для дневных церемоний.</p>
+                    <div class="price">4 200 ₽</div>
+                    <a href="catalog.html" class="card-link">Смотреть в каталоге</a>
+                    <button class="btn-small add-to-cart" data-id="5" data-name="Белый чай" data-price="4200">В корзину</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img tea-set"></div>
+                <div class="card-content">
+                    <h3>Глиняный чайник Исин</h3>
+                    <p>Для раскрытия плотных пуэров и улунов.</p>
+                    <div class="price">5 800 ₽</div>
+                    <a href="catalog.html" class="card-link">Смотреть в каталоге</a>
+                    <button class="btn-small add-to-cart" data-id="7" data-name="Чайник Исин" data-price="5800">В корзину</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">Чайный дом «Ча Ши»</div>
+                <p class="footer-item">Сопровождаем к идеальной чашке шаг за шагом</p>
+            </div>
+            <div>
+                <div class="footer-item">Москва, ул. Чайная, 15</div>
+                <div class="footer-item">Ежедневно: 10:00-22:00</div>
+            </div>
+            <div>
+                <div class="footer-item"><a href="tel:+74951234567">+7 (495) 123-45-67</a></div>
+                <div class="footer-item"><a href="mailto:info@chashi.ru">info@chashi.ru</a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 «Ча Ши». Подлинные чаи и чайная культура без компромиссов.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

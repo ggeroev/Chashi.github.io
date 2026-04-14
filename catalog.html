@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог чая — Ча Ши</title>
+    <meta name="description" content="Каталог чайного дома Ча Ши: пуэр, улун, зелёный, белый и красный чай премиум-класса.">
+    <meta name="theme-color" content="#2f2119">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Ча Ши — главная">
+                <span class="logo-main">Ча Ши</span>
+                <span class="logo-chinese">茶 卩</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-nav">☰</button>
+            <nav class="nav-menu" id="primary-nav">
+                <ul>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="events.html">События</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html" class="cart-link" aria-label="Перейти в корзину">Корзина <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalog-main">
+        <section class="catalog-hero">
+            <h1>Каталог чая</h1>
+            <p>Подбирай сорт по типу, стране и бюджету. Мы сохранили только те позиции, которые регулярно берут на повтор.</p>
+        </section>
+
+        <div class="catalog-layout">
+            <aside class="filters" aria-label="Фильтры каталога">
+                <h3>Тип чая</h3>
+                <label class="filter-option"><input type="checkbox" name="type" value="green" checked> Зелёный</label>
+                <label class="filter-option"><input type="checkbox" name="type" value="black" checked> Красный/чёрный</label>
+                <label class="filter-option"><input type="checkbox" name="type" value="oolong" checked> Улун</label>
+                <label class="filter-option"><input type="checkbox" name="type" value="puer" checked> Пуэр</label>
+                <label class="filter-option"><input type="checkbox" name="type" value="white" checked> Белый</label>
+
+                <h3>Максимальная цена</h3>
+                <input type="range" id="price-range" min="1500" max="6000" step="100" value="5000" aria-label="Максимальная цена">
+                <span class="range-output" id="price-output">до 5 000 ₽</span>
+
+                <h3>Страна</h3>
+                <label class="filter-option"><input type="checkbox" name="country" value="china" checked> Китай</label>
+                <label class="filter-option"><input type="checkbox" name="country" value="taiwan" checked> Тайвань</label>
+                <label class="filter-option"><input type="checkbox" name="country" value="japan" checked> Япония</label>
+            </aside>
+
+            <section>
+                <p class="catalog-results" id="catalog-results">Показано 6 из 6 позиций</p>
+                <div class="catalog-grid" id="catalog-grid">
+                    <article class="card" data-type="green" data-country="china" data-price="2800">
+                        <div class="card-img tea-green"></div>
+                        <div class="card-content">
+                            <h3>Лунцзин «Колодец Дракона»</h3>
+                            <p>Классический зелёный чай из Ханчжоу.</p>
+                            <div class="price">2 800 ₽</div>
+                            <a href="product.html" class="card-link">Подробнее</a>
+                            <button class="btn-small add-to-cart" data-id="3" data-name="Лунцзин" data-price="2800">В корзину</button>
+                        </div>
+                    </article>
+
+                    <article class="card" data-type="oolong" data-country="china" data-price="2200">
+                        <div class="card-img tea-oolong"></div>
+                        <div class="card-content">
+                            <h3>Те Гуань Инь</h3>
+                            <p>Цветочный улун средней ферментации.</p>
+                            <div class="price">2 200 ₽</div>
+                            <a href="product.html" class="card-link">Подробнее</a>
+                            <button class="btn-small add-to-cart" data-id="2" data-name="Те Гуань Инь" data-price="2200">В корзину</button>
+                        </div>
+                    </article>
+
+                    <article class="card" data-type="puer" data-country="china" data-price="3500">
+                        <div class="card-img tea-puer"></div>
+                        <div class="card-content">
+                            <h3>Пуэр «Древний Лес»</h3>
+                            <p>Выдержка 10+ лет, плотный древесный профиль.</p>
+                            <div class="price">3 500 ₽</div>
+                            <a href="product.html" class="card-link">Подробнее</a>
+                            <button class="btn-small add-to-cart" data-id="1" data-name="Пуэр Древний Лес" data-price="3500">В корзину</button>
+                        </div>
+                    </article>
+
+                    <article class="card" data-type="white" data-country="china" data-price="4200">
+                        <div class="card-img tea-white"></div>
+                        <div class="card-content">
+                            <h3>Белый чай «Серебряные иглы»</h3>
+                            <p>Деликатный аромат и сладкое послевкусие.</p>
+                            <div class="price">4 200 ₽</div>
+                            <a href="product.html" class="card-link">Подробнее</a>
+                            <button class="btn-small add-to-cart" data-id="5" data-name="Белый чай" data-price="4200">В корзину</button>
+                        </div>
+                    </article>
+
+                    <article class="card" data-type="black" data-country="china" data-price="1900">
+                        <div class="card-img tea-red"></div>
+                        <div class="card-content">
+                            <h3>Дянь Хун «Золотые почки»</h3>
+                            <p>Мягкий красный чай с медовым акцентом.</p>
+                            <div class="price">1 900 ₽</div>
+                            <a href="product.html" class="card-link">Подробнее</a>
+                            <button class="btn-small add-to-cart" data-id="4" data-name="Дянь Хун" data-price="1900">В корзину</button>
+                        </div>
+                    </article>
+
+                    <article class="card" data-type="green" data-country="japan" data-price="1600">
+                        <div class="card-img tea-jasmine"></div>
+                        <div class="card-content">
+                            <h3>Жасминовый жемчуг</h3>
+                            <p>Свежий купаж с мягкими цветочными нотами.</p>
+                            <div class="price">1 600 ₽</div>
+                            <a href="product.html" class="card-link">Подробнее</a>
+                            <button class="btn-small add-to-cart" data-id="6" data-name="Жасминовый чай" data-price="1600">В корзину</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">Чайный дом «Ча Ши»</div>
+                <p class="footer-item">Точная подборка вкусов для дома и церемоний</p>
+            </div>
+            <div>
+                <div class="footer-item">Москва, ул. Чайная, 15</div>
+                <div class="footer-item">Ежедневно: 10:00-22:00</div>
+            </div>
+            <div>
+                <div class="footer-item"><a href="tel:+74951234567">+7 (495) 123-45-67</a></div>
+                <div class="footer-item"><a href="mailto:info@chashi.ru">info@chashi.ru</a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 «Ча Ши». Собрано с уважением к чайной традиции.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

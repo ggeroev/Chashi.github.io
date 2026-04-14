@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Ча Ши</title>
+    <meta name="description" content="Контакты чайного дома Ча Ши: адрес, телефон, график работы и форма обратной связи.">
+    <meta name="theme-color" content="#2f2119">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Ча Ши — главная">
+                <span class="logo-main">Ча Ши</span>
+                <span class="logo-chinese">茶 卩</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-nav">☰</button>
+            <nav class="nav-menu" id="primary-nav">
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="events.html">События</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                    <li><a href="cart.html" class="cart-link" aria-label="Перейти в корзину">Корзина <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contacts-main">
+        <h1 class="section-title">Контакты <span>всегда на связи</span></h1>
+
+        <div class="contacts-layout">
+            <section class="contact-details">
+                <h2>Чайный дом «Ча Ши»</h2>
+                <p class="contact-item">Адрес: Москва, ул. Чайная, 15 (м. Китай-город)</p>
+                <p class="contact-item">График: ежедневно с 10:00 до 22:00</p>
+                <p class="contact-item">Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                <p class="contact-item">Email: <a href="mailto:info@chashi.ru">info@chashi.ru</a></p>
+
+                <div class="contact-form-block">
+                    <h3>Обратная связь</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Ваше имя</label>
+                            <input id="contact-name" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input id="contact-email" type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Сообщение</label>
+                            <textarea id="contact-message" rows="5" placeholder="Например: хочу подобрать чай для подарка"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="contact-map">
+                <div class="map-image" role="img" aria-label="Карта расположения чайного дома">
+                    5 минут от метро «Китай-город»
+                </div>
+                <p>Перед визитом можно написать в форму или позвонить: подскажем по наличию редких позиций и забронируем чай для самовывоза.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">Чайный дом «Ча Ши»</div>
+                <p class="footer-item">Встречаем, подбираем и сопровождаем по чаю</p>
+            </div>
+            <div>
+                <div class="footer-item">Москва, ул. Чайная, 15</div>
+                <div class="footer-item">Ежедневно: 10:00-22:00</div>
+            </div>
+            <div>
+                <div class="footer-item"><a href="tel:+74951234567">+7 (495) 123-45-67</a></div>
+                <div class="footer-item"><a href="mailto:info@chashi.ru">info@chashi.ru</a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 «Ча Ши». Открыты для вопросов и чайных встреч.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
